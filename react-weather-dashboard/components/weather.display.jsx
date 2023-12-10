@@ -17,4 +17,4 @@ function WeatherDisplay() {
     )
 }
 
-export default WeatherDisplay
+export default WeatherDisplay;
