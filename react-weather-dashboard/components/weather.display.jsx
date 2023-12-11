@@ -1,9 +1,11 @@
 import React from 'react'
 import FiveDayForecast from './fiveDayForecast.display'
 
-function WeatherDisplay() {
+// HTML being displayed to the screen
+export default async function WeatherDisplay() {
+
     return (
-        <div className='py-8 px-6 mt-10 border border-gray-950'>
+        <div className='py-8 px-6 mt-10 border border-white-950'>
             <h2 className='mb-5'>Weather in City</h2>
             <ul>
                 <li className='my-2'>Temp: 65℉</li>
@@ -16,5 +18,3 @@ function WeatherDisplay() {
         </div>
     )
 }
-
-export default WeatherDisplay;

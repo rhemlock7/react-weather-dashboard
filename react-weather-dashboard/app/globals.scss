@@ -13,6 +13,8 @@ html {
     max-width: 1440px;
     width: 90%;
     margin: 0 auto;
+    background-color: rgb(22, 22, 33);
+    color: white;
 }
 
 main {
@@ -23,7 +25,7 @@ h1 {
     font-family: "articulat-heavy-cf", sans-serif;
     font-weight: 900;
     font-style: normal;
-    font-size: 5em;
+    font-size: 4.25em;
     line-height: 1em;
     margin: 0;
     margin-bottom: 15px;
@@ -63,4 +65,30 @@ input {
     width: 35%;
     margin-left: 10px;
     padding: 5px 15px;
+    color: black;
+}
+
+button {
+    margin: 5px;
+    margin-left: 15px;
+    border: 1px solid white;
+    padding: 5px 25px;
+    border-radius: 24px;
+    transition: all 200ms ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background: white;
+    color: black;
+}
+
+button:disabled {
+    opacity: 50%;
+}
+
+button:disabled:hover{
+    transform: scale(1);
+    background: none;
+    color: white;
 }

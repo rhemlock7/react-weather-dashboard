@@ -13,12 +13,17 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <link rel="stylesheet" href="https://use.typekit.net/hgb8vzb.css"></link>
+      {/* Head tag with CSS Links */}
+      <head>
+        <link rel="stylesheet" href="https://use.typekit.net/hgb8vzb.css"></link>
+      </head>
+
+      {/* Primary Content */}
       <body className={inter.className}>
         <Navigation />
         {children}
         <Footer />
-        </body>
+      </body>
     </html>
   )
 }
