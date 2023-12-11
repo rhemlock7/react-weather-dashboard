@@ -13,8 +13,11 @@ export default function Form() {
 
     function handleSubmit(event) {
         event.preventDefault();
+        setStatus('submitting');
         console.log("clicked!");
         console.log(city);
+        setCity('')
+        setStatus('typing')
     }
 
     return (
@@ -29,9 +32,9 @@ export default function Form() {
                 onChange={handleInputChange} />
 
             <button
-                disabled={city.length === 0 || status==='submitting'}
+                disabled={city.length === 0 || status === 'submitting'}
                 type="submit"
-            
+
             >Search</button>
         </form>
     )
